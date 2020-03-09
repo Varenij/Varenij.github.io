@@ -542,3 +542,21 @@ i {
 	font-weight: 100;
 	font-size: 30px;
 }
+
+input[type="checkbox"] {
+	display: none;
+}
+
+label:before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border: 1px solid white;
+	cursor: pointer;
+	margin-right: 15px;
+}
+
+input[type="checkbox"]:checked + label:before {
+	background-color: white;
+}
