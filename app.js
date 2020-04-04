@@ -40,6 +40,8 @@ let incrementBtn = document.querySelectorAll('.increment-btn');
 let decrementBtn = document.querySelectorAll('.decrement-btn');
 let quantityInput = document.querySelectorAll('.product-quantity input');
 
+// ВАРИАНТ С УРОКА
+
 // incrementBtn.addEventListener("click",function() {
 //     let currenctValue = +quantityInput.value;
 //     let nextValue = currenctValue + 1;
@@ -62,25 +64,58 @@ let quantityInput = document.querySelectorAll('.product-quantity input');
 //     }
 // })
 
+
+// ПЕРВЫЙ ВАРИАНТ
+
+// for(let i = 0; i < incrementBtn.length; i++) {
+// 	incrementBtn[i].addEventListener('click', function() {
+//     quantityInput[i].value = +quantityInput[i].value + 1;
+//     if(+quantityInput[i].value >= 5) {
+//         incrementBtn[i].disabled = true;
+//     } else {
+//         incrementBtn[i].disabled = false;
+//     };
+// 	if(+quantityInput[i].value <= 1) {
+//         decrementBtn[i].disabled = true;
+//     } else {
+//         decrementBtn[i].disabled = false;
+//     }
+// 	})
+// };
+
+// for(let i = 0; i < decrementBtn.length; i++) {
+// 	decrementBtn[i].addEventListener('click', function() {
+//     quantityInput[i].value = +quantityInput[i].value - 1;
+//     if(+quantityInput[i].value >= 5) {
+//         incrementBtn[i].disabled = true;
+//     } else {
+//         incrementBtn[i].disabled = false;
+//     };
+//     if(+quantityInput[i].value <= 1) {
+//         decrementBtn[i].disabled = true;
+//     } else {
+//         decrementBtn[i].disabled = false;
+//     }
+// 	})
+// };
+
+// ВТОРОЙ ВАРИАНТ
+
 for(let i = 0; i < incrementBtn.length; i++) {
-	incrementBtn[i].addEventListener('click', function() {
+    incrementBtn[i].addEventListener('click', function() {
     quantityInput[i].value = +quantityInput[i].value + 1;
     if(+quantityInput[i].value >= 5) {
         incrementBtn[i].disabled = true;
     } else {
         incrementBtn[i].disabled = false;
     };
-	if(+quantityInput[i].value <= 1) {
+    if(+quantityInput[i].value <= 1) {
         decrementBtn[i].disabled = true;
     } else {
         decrementBtn[i].disabled = false;
     }
-
-	})
-};
-
-for(let i = 0; i < decrementBtn.length; i++) {
-	decrementBtn[i].addEventListener('click', function() {
+    });
+    decrementBtn[i].addEventListener('click', function() {
     quantityInput[i].value = +quantityInput[i].value - 1;
     if(+quantityInput[i].value >= 5) {
         incrementBtn[i].disabled = true;
@@ -92,5 +127,5 @@ for(let i = 0; i < decrementBtn.length; i++) {
     } else {
         decrementBtn[i].disabled = false;
     }
-	})
+    })
 };
