@@ -78,6 +78,7 @@ body {
 	position: absolute;
 	background: none;
 	width: 200px;
+	z-index: 20;
 }
 
 i {
@@ -212,12 +213,6 @@ i {
 	margin: 0 auto;
 }
 
-.slide-inside p {
-	text-align: center;
-	line-height: 400px;
-}
-
-
 .device-type {
 	background-color: rgba(255,255,255,0.25);
 	width: 100%;
@@ -329,6 +324,17 @@ i {
 	top: 10px;
 }
 
+.heart1 {
+	position: absolute;
+	border: none;
+	width: 30px;
+	height: 30px;
+	background: url(site/icon7.png) no-repeat 50% 50% #2b71b7;
+	right: 10px;
+	top: 50px;
+	color: white;
+}
+
 .heart {
 	position: absolute;
 	border: 1px solid #2b71b7;
@@ -337,16 +343,18 @@ i {
 	background: url(site/icon5.png) no-repeat 50% 50%;
 	right: 10px;
 	top: 50px;
-}
 
-.squer:hover {
-	border-style: none;
-	background: url(site/icon6.png) no-repeat 50% 50% #2b71b7;
 }
 
 .heart:hover {
 	border-style: none;
 	background: url(site/icon7.png) no-repeat 50% 50% #2b71b7;
+}
+
+
+.squer:hover {
+	border-style: none;
+	background: url(site/icon6.png) no-repeat 50% 50% #2b71b7;
 }
 
 .products-image {
@@ -382,86 +390,11 @@ i {
 	width: 33%;
 }
 
-.select-menu {
-	width: 266px;
-	height: 40px;
-	border: solid 1px white;
-	background-color: #2b71b7;
-	margin-left: 3px;
-}
-
-.ul-menu {
-	display: block;
-	height: 100%;
-}
-
-/*.ul-menu li {
-	color: white;
-	font-size: 21px;
-	line-height: 40px;
-	margin-left: 20px;
-}*/
-
-.ul-submenu {
-	display: none;
-	position: absolute;
-	z-index: 10;
-	background: none;
-	width: 200px;
-}
-
-.ul-submenu li {
-	color: white;
-	background-color: #2b71b7;
-	font-size: 21px;
-	line-height: 40px;
-	margin-left: 20px;
-}
-
-.ul-menu a {
-	display: block;
-	text-decoration: none;
-	font-size: 21px;
-	font-weight: 100;
-	line-height: 40px;
-	margin-left: 20px;
-	color: white; 
-}
-
-.ul-menu i {
-	margin-left: 100px;
-}
-
-.ul-menu li:hover .ul-submenu {
-	display: block;
-}
-
-.ul-submenu a {
-	display: block;
-	text-decoration: none;
-	font-size: 21px;
-	font-weight: 100;
-	line-height: 40px;
-	text-align: center;
-	color: white; 
-	background-color: #2b71b7;
-	border: 1px solid white;
-	width: 266px;
-	margin-left: -21px;
-	padding-left: 22px;
-	text-align: left;
-}
-
-.ul-submenu a:hover {
-	color: #2b71b7; 
-	background-color: white;
-}
-
 .description {
 	color: white;
 	font-size: 21px;
 	font-weight: 100;
-	height: 469px;
+	height: 470px;
 	background-color: rgba(0,0,0,0.1);
 	width: 266px;
 }
@@ -515,6 +448,26 @@ i {
 	line-height: 50px;
 	margin: 0 auto;
 	margin-top: 25px;
+}
+
+.product-quantity {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.product-quantity input {
+	background: none;
+	border: solid white 1px;
+	color: white;
+	text-align: center;
+}
+
+.product-quantity button {
+	background: none;
+	border: solid white 1px;
+	color: white;
+	line-height: 15px;
 }
 
 .more-details:hover {
@@ -583,4 +536,105 @@ input[type="checkbox"]:checked + label:before {
 	text-align: center;
 	font-size: 21px;
 	color: #2b71b7;
+}
+
+.slider-block img {
+	padding-left: 450px;
+}
+
+.zzz {
+margin-top: 100px;
+}
+
+.slick-prev {
+	left: 0;
+	height: 50px;
+	width: 25px;
+	z-index: 10;
+	top: 200px;
+}
+
+.slick-next {
+	right: 0;
+	height: 50px;
+	width: 25px;
+	z-index: 10;
+	top: 200px;
+}
+
+.slick-prev:before {
+	background: url(site/123.png) no-repeat 50% 50%;
+	height: 50px;
+	width: 25px;
+	font-size: 50px;
+	content: '<';
+	color: transparent;
+}
+
+.slick-next:before {
+	background: url(site/321.png) no-repeat 50% 50%;
+	height: 50px;
+	width: 25px;
+	font-size: 50px;
+	content: '<';
+	color: transparent;
+}
+
+.slick-dots {
+	bottom: -80px;
+}
+
+.slick-dots li button::before{
+	background: url(site/567.png) no-repeat 50% 50%;
+	color: transparent;
+	opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+	background: url(site/678.png) no-repeat 50% 50%;
+	color: transparent;
+	opacity: 1;
+}
+
+.selectize-input.full {
+	border: 1px solid white;
+	border-radius: 0;
+	width: 267px;
+	background-color: #2b71b7;
+	color: white;
+	font-family: 'Roboto'; 
+	font-size: 21px;
+	font-weight: 100;
+	margin-left: 2px;
+}
+
+.selectize-dropdown{
+	background-color: #2b71b7;
+	color: white;
+	font-family: 'Roboto'; 
+	font-size: 21px;
+	font-weight: 100;
+	border: 1px solid white;
+	border-radius: 0;
+	margin-left: 2px;
+}
+
+.option:hover {
+	font-weight: 300;
+	color: #2b71b7;
+}
+
+.selectize-input, .selectize-control.single .selectize-input.input-active{
+	background-color: #2b71b7;
+}
+
+.selectize-control.single .selectize-input:after {
+	background: url(site/zxc.png) no-repeat 50% 50%;
+	height: 9px;
+	width: 13px;
+	border: none;
+}
+
+.selectize-control.single .selectize-input.dropdown-active:after {
+	background: url(site/qwe.png) no-repeat 50% 50%;
 }
