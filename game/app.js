@@ -10,7 +10,7 @@
  foodImg.src = "Ola32.png";
 
  let SnakeImg = new Image();
- SnakeImg.src = "Head32.png";
+ SnakeImg.src = "Head32.png"; 
 
  let box = 32;
 
