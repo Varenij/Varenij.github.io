@@ -109,7 +109,7 @@
 
     eatTail(newHead, snake);
     eatTail2(newHead, snake);
-    snake.unshift(newHead);
+    snake.unshift(newHead); 
 
 }
 
