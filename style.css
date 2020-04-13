@@ -91,6 +91,9 @@ i {
 	width: 294px;
 }
 
+li span {
+	font-family: 'Press Start 2P', cursive;
+}
 
 .submenu a {
 	background-color: #2c71b8;

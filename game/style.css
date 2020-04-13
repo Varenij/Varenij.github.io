@@ -1,0 +1,45 @@
+canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+#gameAll {
+    position: relative;
+    width: 608px;
+    height: 608px;
+    margin: 0 auto;
+}
+
+#gameOver{
+    position: absolute;
+    z-index: 20;
+    width: 608px;
+    height: 608px;
+    font-family: 'Monoton', cursive;
+    font-size: 60px;
+    background-color: gray;
+    color: hotpink;
+    text-align: center;
+    margin: 0 auto;
+    top: 0;
+}
+
+#goodJob {
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    top: 0;
+    background: url(good.jpg) no-repeat 50% 50%;
+}
+
+.hidden {
+    display: none;
+}
+
+.about {
+    margin: o auto;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
