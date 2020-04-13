@@ -9,8 +9,8 @@
  let foodImg = new Image();
  foodImg.src = "Ola32.png";
 
- let SnakeImg = new Image();
- SnakeImg.src = "Head32.png"; 
+ let snakeImg = new Image();
+ snakeImg.src = "Head32.png"; 
 
  let box = 32;
 
@@ -66,7 +66,7 @@
         // ctx.fillStyle = i == 0 ? "green" : "red";
         // ctx.fillRect(snake[i].x, snake[i].y, box, box);
 
-        ctx.drawImage(SnakeImg, snake[i].x, snake[i].y, box, box);
+        ctx.drawImage(snakeImg, snake[i].x, snake[i].y, box, box);
     };
 
     ctx.fillStyle = 'white';
