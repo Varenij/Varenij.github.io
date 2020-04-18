@@ -1,4 +1,6 @@
 let cvs = document.getElementById("canvas");
+let overlay = document.getElementById("gameOver");
+let button = document.getElementById("button");
 let ctx = cvs.getContext("2d");
 
 let bird = new Image();
@@ -19,7 +21,7 @@ let faild = new Audio();
 
 fly.src = "fly.mp3";
 scoreAdd.src = "score.mp3";
-faild.src = "faild.mp3";
+faild.src = "faild1.mp3";
 
 let gap = 90;
 
@@ -64,7 +66,9 @@ function draw () {
             && (yPos <= pipe[i].y + pipeUp.height 
             || yPos + bird.height >= pipe[i].y + pipeUp.height + 
             gap) || yPos + bird.height >= cvs.height - fg.height) {
-                location.reload()
+                faild.play();
+                overlay.classList.remove('hidden');
+                location.stop();
             };    
                 
         if(pipe[i].x == 5) {
@@ -84,3 +88,7 @@ function draw () {
 }
  
 pipeBottom.onload = draw;
+
+button.addEventListener("click", function() {
+    location.reload();
+});
