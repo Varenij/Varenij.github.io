@@ -18,7 +18,6 @@ for(let i = 0; i < addToCartButtons.length; i++) {
 
 for(let i = 0; i < pushHeart.length; i++) {
 	pushHeart[i].addEventListener('click', function() {
-		console.log ("liked");
 		pushHeart[i].classList.toggle("heart");
 	});
 };
