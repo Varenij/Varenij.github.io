@@ -213,6 +213,10 @@ ul.submenu {
     z-index: 10;
 }
 
+.history .square {
+    margin-left: 0;
+}
+
 .button {
     background-color: #7beec7;
     color: white;
