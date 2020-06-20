@@ -9,6 +9,7 @@ body {
     color: #60606e;
     animation: slideInLeft;
     animation-duration: 1s;
+    padding: 0 10px 0 10px;
 }
 
 header {
