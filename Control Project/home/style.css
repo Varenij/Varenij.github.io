@@ -33,6 +33,10 @@ header {
 	background-color: rgba(255,255,255,0.85);
 }
 
+.burger {
+    display: none;
+}
+
 .container {
 	width: 1140px;
     margin: 0 auto;
@@ -523,6 +527,7 @@ input::placeholder {
     }
 
     .burger {
+        display: block;
         grid-area: bur;
     }
 
