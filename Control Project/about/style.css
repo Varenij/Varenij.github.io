@@ -18,8 +18,8 @@ header {
 	left: 0;
 	right: 0;
 	bottom: 0;
-    height: 850px;
-    background: url(image/Layer1.png)50% 50% no-repeat;
+    height: 500px;
+    background: url(image/Layer4.png)50% 50% no-repeat;
     background-size: cover;
     transition: all 2s;
 }
@@ -46,11 +46,10 @@ header {
     padding-top: 45px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 4fr 4fr;
+    grid-template-rows: 1fr 6fr;
     grid-template-areas: 
     "log nav"
     "abo abo"
-    "pic his"
     ;
 }
 
@@ -135,59 +134,50 @@ ul.submenu {
 
 .about {
     grid-area: abo;
-}
-
-.weAre {
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-    background-color: #7beec7;
-    height: 30px;
-    width: 100px;
-    margin: 0 auto;
-    line-height: 30px;
-    margin-top: 100px;
+    align-self: end;
 }
 
 .agencyName {
-    width: 50%;
-    height: 100px;
-    border: solid #60606e 10px;
     margin: 0 auto;
-    line-height: 80px;
     text-align: center;
-    font-size: 48px;
+    font-size: 36px;
     font-weight: bold;
 }
 
 .agencyAbout {
-    width: 60%;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 10px;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: bold;
 }
 
-.picture {
-    height: 400px;
-    width: 80%;
-    background: url(image/Layer4.png) 50% 50% no-repeat;
-    grid-area: pic;
+.aboutUsContainer {
+    padding-top: 150px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
 }
 
 .history {
-    grid-area: his;
     line-height: 20px;
     position: relative;
 }
 
+.history h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
 .history p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 30px;
+    width: 95%;
 }
 
 .square {
@@ -202,6 +192,7 @@ ul.submenu {
 .square h1 {
     font-size: 30px;
     font-weight: bold;
+    text-align: center;
 }
 
 .greenSquare {
@@ -232,12 +223,6 @@ ul.submenu {
     line-height: 50px;
 }
 
-.history .button {
-    position: absolute;
-    right: 0;
-    bottom: 70px;
-}
-
 .button:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     transition: all 1s;
@@ -247,10 +232,10 @@ ul.submenu {
 
 .titleContainer {
     width: 750px;
-    height: 440px;
+    height: 190px;
     margin: 0 auto;
     text-align: center;
-    padding: 150px 15px 0 15px;
+    padding: 0 15px 0 15px;
 }
 
 .title {
@@ -262,95 +247,80 @@ ul.submenu {
 }
 
 .servicesContainer {
-    height: 500px;
+    height: 100%;
+    padding-bottom: 150px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: (1fr 1fr);
     grid-template-areas: 
-    "se se pi pi"
-    "se se pi pi"
+    "se se se"
+    "se se se"
     ;
+}
+
+.serviceName {
+    display: grid;
+    grid-template-columns: 40px 1fr;
 }
 
 .service {
     line-height: 30px;
     justify-self: start;
+    margin-bottom: 20px;
 }
 
 .service h1 {
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 20px;
+    align-self: center;
+    margin-left: 15px;
 }
 
-.service h2 {
+.service p {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 300;
+    color: #888892;
+    width: 90%;
 }
 .image {
-    background-image: url(image/img3.png);
-    width: 457px;
-    height: 500px;
-    grid-area: pi;
-    justify-self: end;
-}
-
-.portfolioContainer {
-    height: 1044px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "cho pho pho2 pho3"
-    "cho pho pho2 pho3"
-    "cho pho pho2 pho3"
-    ;
-}
-
-.chooseContainer {
-    grid-area: cho;
-}
-
-.chooseContainer h1 {
-    font-size: 30px;
-    font-weight: bold;
+    background-color: #7beec7; 
+    width: 40px;
+    height: 40px;
+    text-align: center;
     line-height: 50px;
-    margin-bottom: 50px;
-}
-
-.chooseContainer li {
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 40px;
-}
-
-.chooseMenu li:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.photos {
-    grid-area: pho;
-}
-
-.photos2 {
-    grid-area: pho2;
-}
-
-.photos3 {
-    grid-area: pho3;
 }
 
 .photo{
-    margin-bottom: 30px;
+    margin: 0 0 30px 30px;
     position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slick-next:before {
+    font-size: 50px;
+    color:#7beec7
+}
+
+.slick-prev:before {
+    font-size: 50px;
+    color:#7beec7
+}
+
+.slick-prev {
+    left: -50px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
 }
 
 .photo .overlay {
     display: none;
+    text-align: center;
     animation: fadeInLeft;
     animation-duration: 1s;
 }
@@ -370,17 +340,81 @@ ul.submenu {
 }
 
 .job {
-    width: 100px;
-    height: 25px;
+    display: inline-block;
+    padding: 0 5px 0 5px;
     background-color: #7beec7;
     color: white;
-    margin: 0 auto;
     font-weight: bold;
     font-size: 12px;
     text-align: center;
     line-height: 25px;
     animation: slideInRight;
     animation-duration: 2s;
+}
+
+.readMoreContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 30px 0 30px;
+    margin-bottom: 30px;
+    height: 150px;
+    width: 100%;
+    background-color: #efeff0;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    align-items: center;
+}
+
+.readMoreContainer .button {
+    justify-self: end;
+}
+
+.brandsContainer {
+    height: 575px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #888892;
+    align-items: center;
+}
+
+.jonDoe {
+    text-align: center;
+}
+
+.johneFoto {
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    background-image: url(image/Layer13.png);
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.jonDoe .button {
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.brands {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.brand {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    height: 100px;
+    border: solid 1px #d9d9d9;
 }
 
 .green {

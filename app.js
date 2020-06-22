@@ -3,13 +3,6 @@ const productsCountEl = document.getElementById("products-count");
 const addToCartButtons = document.querySelectorAll(".add-to-cart1");
 let pushHeart = document.querySelectorAll(".heart");
 
-// for(let i = 0; i < addToCartButtons.length; i++) {
-// 	addToCartButtons[i].addEventListener('click', function() {
-// 		let prevProductsCount = +productsCountEl.textContent;
-// 		productsCountEl.textContent = prevProductsCount + 1;
-// 	});
-// }
-
 for(let i = 0; i < addToCartButtons.length; i++) {
 	addToCartButtons[i].addEventListener('click', function() {
 		productsCountEl.textContent = +productsCountEl.textContent + 1;

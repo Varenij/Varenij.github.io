@@ -83,6 +83,7 @@ header {
 	display: flex;
 	background: url(images/img2.png)no-repeat 50% 50%;
 	height: 660px;
+	background-size: cover;
 }
 .marketplace {
 	color: white;
