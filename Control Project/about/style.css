@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box; 
     transition: all 0.5s;
+    outline: none;
 }	
 
 body {
@@ -120,6 +121,7 @@ ul.submenu {
 }
 
 .submenu li {
+    border-radius: 5px;
     width: 200px;
     text-align: left;
     padding-left: 15px;
