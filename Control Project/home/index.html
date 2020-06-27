@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <title>BigProject</title>
 </head>
-<body>
+<body id='body'>
     <header> 
         <div class="overlay">
             <div class="container">
@@ -248,7 +248,7 @@
                 <div class="getInTouchContainer">
                     <div class="getInTouch">
                         <h1 id='getInTouch'>YOU THINK WE'RE COOL ? LET'S WORK TOGETHER</h1>
-                        <div class="button">GET IN TOUCH</div>
+                        <div class="button" id='getInTouchBut'>GET IN TOUCH</div>
                     </div>
                     <div class="stayInformed">
                         <h1>STAY INFORMED WITH OUR NEWSLETTER</h1>
@@ -284,7 +284,7 @@
                         </li>
                         <li>  
                             <div class="animate">
-                                <a href="">SERVICES</a>
+                                <a href="../services/index.html">SERVICES</a>
                             </div>
                         </li>
                         <li class="subLi">
@@ -323,6 +323,39 @@
             </div>
         </div>
     </footer>  
+
+    <div class="modal">
+		<div class="modal-block">
+			<form action="">
+				<div class="btn-cloth"><i class="far fa-window-close"></i></div>
+				<h3>Leave contacts to stay in touch</h3>
+				<div class="form-field">
+					<input type="text" placeholder="your name">
+				</div>
+				<div class="form-field">
+					<input type="text" placeholder="your phone">
+				</div>
+				<div class="button">GET IN TOUCH</div>
+			</form>
+		</div>
+    </div>	
+    
+    <div class="modal2">
+		<div class="modal-block">
+			<form action="">
+				<div class="btn-cloth2"><i class="far fa-window-close"></i></div>
+				<h3>Do you wont to join us?</h3>
+				<div class="form-field">
+					<input type="text" placeholder="your name">
+				</div>
+				<div class="form-field">
+					<input type="text" placeholder="your phone">
+				</div>
+				<div class="button">JOIN</div>
+			</form>
+		</div>
+    </div>	
+
     <script src="sript.js"></script> 
 </body>
 </html>

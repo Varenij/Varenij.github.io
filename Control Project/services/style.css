@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box; 
     transition: all 0.5s;
+    outline: none;
 }	
 
 body {
@@ -18,8 +19,8 @@ header {
 	left: 0;
 	right: 0;
 	bottom: 0;
-    height: 850px;
-    background: url(image/Layer1.png)50% 50% no-repeat;
+    height: 500px;
+    background: url(image/Layer4.png)50% 50% no-repeat;
     background-size: cover;
     transition: all 2s;
 }
@@ -46,11 +47,10 @@ header {
     padding-top: 45px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 4fr 4fr;
+    grid-template-rows: 1fr 6fr;
     grid-template-areas: 
     "log nav"
     "abo abo"
-    "pic his"
     ;
 }
 
@@ -121,6 +121,7 @@ ul.submenu {
 }
 
 .submenu li {
+    border-radius: 5px;
     width: 200px;
     text-align: left;
     padding-left: 15px;
@@ -135,59 +136,61 @@ ul.submenu {
 
 .about {
     grid-area: abo;
-}
-
-.weAre {
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-    background-color: #7beec7;
-    height: 30px;
-    width: 100px;
-    margin: 0 auto;
-    line-height: 30px;
-    margin-top: 100px;
+    align-self: end;
 }
 
 .agencyName {
-    width: 50%;
-    height: 100px;
-    border: solid #60606e 10px;
     margin: 0 auto;
-    line-height: 80px;
     text-align: center;
-    font-size: 48px;
+    font-size: 36px;
     font-weight: bold;
 }
 
 .agencyAbout {
-    width: 60%;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 10px;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.whatWeDoContainer {
+    height: 515px;
+    line-height: 27px;
+    color: #60606e;
+    font-size: 14px;
     font-weight: 300;
-}
-
-.picture {
-    height: 400px;
-    width: 80%;
-    background: url(image/Layer4.png) 50% 50% no-repeat;
-    grid-area: pic;
-}
-
-.history {
-    grid-area: his;
-    line-height: 20px;
-    position: relative;
-}
-
-.history p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 30px;
+    padding-bottom: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+    't t p p'
+    'l l1 p p'
+    ;
+}
+
+.whatWeDoContainer i {
+    margin-right: 5px;
+    color: #7beec7;
+}
+
+.text {
+    grid-area: t;
+    color: #7e7e89;
+}
+
+.list1 {
+    grid-area: l;
+}
+
+.list2 {
+    grid-area: l1;
+}
+
+.macImage {
+    grid-area: p;
 }
 
 .square {
@@ -196,12 +199,13 @@ ul.submenu {
     margin-bottom: 20px;
     position: relative;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .square h1 {
     font-size: 30px;
     font-weight: bold;
+    text-align: center;
 }
 
 .greenSquare {
@@ -217,10 +221,6 @@ ul.submenu {
     z-index: 10;
 }
 
-.history .square {
-    margin-left: 0;
-}
-
 .button {
     background-color: #7beec7;
     color: white;
@@ -232,12 +232,6 @@ ul.submenu {
     line-height: 50px;
 }
 
-.history .button {
-    position: absolute;
-    right: 0;
-    bottom: 70px;
-}
-
 .button:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     transition: all 1s;
@@ -247,10 +241,10 @@ ul.submenu {
 
 .titleContainer {
     width: 750px;
-    height: 440px;
+    height: 190px;
     margin: 0 auto;
     text-align: center;
-    padding: 150px 15px 0 15px;
+    padding: 0 15px 0 15px;
 }
 
 .title {
@@ -258,129 +252,108 @@ ul.submenu {
     font-size: 14px;
     font-weight: 300;
     margin: 0 auto;
+    margin-top: 150px;
     line-height: 20px;
+    width: 80%;
 }
 
 .servicesContainer {
-    height: 500px;
+    height: 200px;
     width: 100%;
+    text-align: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: (1fr 1fr);
-    grid-template-areas: 
-    "se se pi pi"
-    "se se pi pi"
-    ;
 }
 
 .service {
     line-height: 30px;
-    justify-self: start;
+    padding: 0 20px 0 20px;
 }
 
 .service h1 {
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 20px;
 }
 
-.service h2 {
+.square1 {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+}
+
+.greenSquare1 {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    bottom: 0;
+    background-color: #7beec7;
+}
+
+.hForSquare1 {
+    position: absolute;
+    z-index: 10;
+    display: grid;
+    align-items: center;
+}
+.service p {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 300;
-}
-.image {
-    background-image: url(image/img3.png);
-    width: 457px;
-    height: 500px;
-    grid-area: pi;
-    justify-self: end;
+    color: #888892;
 }
 
-.portfolioContainer {
-    height: 1044px;
+.pricingContainer {
+    height: 640px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "cho pho pho2 pho3"
-    "cho pho pho2 pho3"
-    "cho pho pho2 pho3"
-    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
 }
 
-.chooseContainer {
-    grid-area: cho;
+.plan {
+    width: 360px;
+    height: 490px;
+    border-top: 5px solid #7beec7;
+    padding: 30px 0 0 30px;
 }
 
-.chooseContainer h1 {
+.plan h1{
     font-size: 30px;
     font-weight: bold;
-    line-height: 50px;
-    margin-bottom: 50px;
 }
 
-.chooseContainer li {
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 40px;
-}
-
-.chooseMenu li:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.photos {
-    grid-area: pho;
-}
-
-.photos2 {
-    grid-area: pho2;
-}
-
-.photos3 {
-    grid-area: pho3;
-}
-
-.photo{
-    margin-bottom: 30px;
-    position: relative;
-}
-
-.photo .overlay {
-    display: none;
-    animation: fadeInLeft;
-    animation-duration: 1s;
-}
-
-.photo:hover .overlay{
-    display: block;
-}
-
-.employer {
-    font-weight: bold;
-    font-size: 18px;
-    color: #60606e;
-    text-align: center;
-    margin-top: 50px;
-    animation: slideInRight;
-    animation-duration: 2s;
-}
-
-.job {
-    width: 100px;
-    height: 25px;
+.price {
+    width: 165px;
+    height: 30px;
     background-color: #7beec7;
     color: white;
-    margin: 0 auto;
+    font-size: 14px;
     font-weight: bold;
-    font-size: 12px;
     text-align: center;
-    line-height: 25px;
-    animation: slideInRight;
-    animation-duration: 2s;
+    line-height: 30px;
+    margin: 15px 0 50px 0;
+}
+
+.plan ul {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 55px;
+}
+
+.plan i {
+    color: #7beec7;
+    margin-right: 5px;
+}
+
+.plan:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .green {
@@ -440,12 +413,12 @@ ul.submenu {
     height: 100%;
 }
 
-input {
+.email {
     border: none;
     padding-left: 20px;
 }
 
-input::placeholder {
+.email::placeholder {
     color: #cdcdcd;
 }
 
@@ -495,6 +468,96 @@ input::placeholder {
     transform: scale(1.1);
 }
 
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.30);
+    display: none;
+    z-index: 20;
+}
+
+.modal2 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.30);
+    display: none;
+    z-index: 20;
+}
+
+.modal h3 {
+    color: #60606e;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.modal2 h3 {
+    color: #60606e;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.modal-block {
+	width: 400px;
+	margin: 80px auto;
+	height: 270px;
+	border: 1px solid gray;
+	background-color: white;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+.form-field {
+	margin: 10px 0;	
+}
+
+.form-field input {
+	width: 100%;
+	padding: 10px;
+    height: 40px;
+    border: 1px solid #cdcdcd;
+    outline: none;
+}
+
+.btn-cloth {
+    font-weight: bolder;
+    width: 15px;
+    height: 15px;
+    margin-left: 95%;
+}
+
+.btn-cloth2 {
+    font-weight: bolder;
+    width: 15px;
+    height: 15px;
+    margin-left: 95%;
+}
+
+.btn-cloth:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.btn-cloth2:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
 
 @media all and (max-width: 575px) {
     body {
@@ -513,14 +576,12 @@ input::placeholder {
     .headerContainer {
         padding-top: 10px;
         grid-template-columns: 1fr;
-        grid-template-rows: 25px auto auto 3fr 3fr 3fr;
+        grid-template-rows: 25px auto auto 3fr;
         grid-template-areas: 
         'log'
         'bur'
         'nav'
         'abo'
-        'pic'
-        'his'
         ;
         justify-items: center;
     }
@@ -540,10 +601,6 @@ input::placeholder {
     .toggle {
         display: none;
     } 
-
-    .weAre {
-        margin-top: 10px;
-    }
 
     .agencyName {
         width: 100%;
@@ -572,11 +629,24 @@ input::placeholder {
         padding-top: 20px;
     }
 
-    .picture {
-        width: 100%;
+    .title {
+        margin-top: 0;
+    }
+
+    .whatWeDoContainer {
+        padding: 10px 0 10px 0;
         height: 100%;
         display: block;
-        position: relative;
+        text-align: center;
+    }
+
+    .whatWeDoContainer ul {
+        text-align: left;
+        margin: 10px 0 10px 100px;
+    }
+
+    .macImage img {
+        width: 350px;
     }
 
     .square {
@@ -591,6 +661,7 @@ input::placeholder {
         margin-top: 20px;
         width: 100%;
         height: 100%;
+        text-align: center;
     }
 
     .history .button {
@@ -614,17 +685,17 @@ input::placeholder {
 
     .servicesContainer{
         height: 100%;
+        padding-bottom: 0;
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-gap: 20px;
         grid-template-areas: 
         "se"
         "se"
         "se"
         "se"
-        "pi"
     ;
     }
 
@@ -634,20 +705,21 @@ input::placeholder {
         margin-bottom: 10px;
     }
 
-    .image {
-        height: 100%;
-        width: 100%;
-        background-size: 100%;
-    }
-    .portfolioContainer {
-        height: 100%;
-        width: 100%;
-        display: block;
-        text-align: center;
+    .service h1 {
+        margin: 0;
     }
 
-    .employer {
-        margin-top: 0;
+    .pricingContainer {
+        display: block;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .plan {
+        width: 90%;
+        height: 70%;
+        margin: 0 auto;margin-bottom: 30px;
+        padding-bottom: 10px;
     }
    
     .getInTouchContainer {
@@ -690,5 +762,9 @@ input::placeholder {
         height: 100%;
         text-align: center;
         margin-top: 10px;
+    }
+
+    .modal-block {
+        width: 95%;
     }
 }

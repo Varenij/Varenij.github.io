@@ -476,12 +476,12 @@ ul.submenu {
     height: 100%;
 }
 
-input {
+.email {
     border: none;
     padding-left: 20px;
 }
 
-input::placeholder {
+.email::placeholder {
     color: #cdcdcd;
 }
 
@@ -531,6 +531,96 @@ input::placeholder {
     transform: scale(1.1);
 }
 
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.30);
+    display: none;
+    z-index: 20;
+}
+
+.modal2 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.30);
+    display: none;
+    z-index: 20;
+}
+
+.modal h3 {
+    color: #60606e;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.modal2 h3 {
+    color: #60606e;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.modal-block {
+	width: 400px;
+	margin: 80px auto;
+	height: 270px;
+	border: 1px solid gray;
+	background-color: white;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+.form-field {
+	margin: 10px 0;	
+}
+
+.form-field input {
+	width: 100%;
+	padding: 10px;
+    height: 40px;
+    border: 1px solid #cdcdcd;
+    outline: none;
+}
+
+.btn-cloth {
+    font-weight: bolder;
+    width: 15px;
+    height: 15px;
+    margin-left: 95%;
+}
+
+.btn-cloth2 {
+    font-weight: bolder;
+    width: 15px;
+    height: 15px;
+    margin-left: 95%;
+}
+
+.btn-cloth:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.btn-cloth2:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
 
 @media all and (max-width: 575px) {
     body {
@@ -549,14 +639,12 @@ input::placeholder {
     .headerContainer {
         padding-top: 10px;
         grid-template-columns: 1fr;
-        grid-template-rows: 25px auto auto 3fr 3fr 3fr;
+        grid-template-rows: 25px auto auto 3fr;
         grid-template-areas: 
         'log'
         'bur'
         'nav'
         'abo'
-        'pic'
-        'his'
         ;
         justify-items: center;
     }
@@ -576,10 +664,6 @@ input::placeholder {
     .toggle {
         display: none;
     } 
-
-    .weAre {
-        margin-top: 10px;
-    }
 
     .agencyName {
         width: 100%;
@@ -608,11 +692,10 @@ input::placeholder {
         padding-top: 20px;
     }
 
-    .picture {
-        width: 100%;
+    .aboutUsContainer {
+        padding-top: 10px;
         height: 100%;
         display: block;
-        position: relative;
     }
 
     .square {
@@ -627,6 +710,7 @@ input::placeholder {
         margin-top: 20px;
         width: 100%;
         height: 100%;
+        text-align: center;
     }
 
     .history .button {
@@ -650,17 +734,19 @@ input::placeholder {
 
     .servicesContainer{
         height: 100%;
+        padding-bottom: 0;
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 20px;
         grid-template-areas: 
         "se"
         "se"
         "se"
         "se"
-        "pi"
+        "se"
+        "se"
     ;
     }
 
@@ -670,21 +756,75 @@ input::placeholder {
         margin-bottom: 10px;
     }
 
+    .service h1 {
+        margin: 0;
+    }
+
     .image {
         height: 100%;
         width: 100%;
-        background-size: 100%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
     }
-    .portfolioContainer {
-        height: 100%;
-        width: 100%;
-        display: block;
-        text-align: center;
+
+    .teamContainer {
+        margin: 0 auto;
+        width: 75%;
     }
 
     .employer {
         margin-top: 0;
     }
+
+    .photo {
+        margin-left: 0;
+    }
+
+    .readMoreContainer {
+        padding: 10px 10px 10px 10px;
+        text-align: center;
+        display: block;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #efeff0;
+        font-family: 'Open Sans', sans-serif;
+        font-style: italic;
+        font-size: 18px;
+        align-items: center;
+    }
+
+    .readMoreContainer .button {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .brandsContainer {
+        height: 100%;
+        display: block;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 30px;
+        color: #888892;
+        align-items: center;
+    }
+
+    .jonDoe .button {
+        margin: 0 auto;
+    }
+
+    .brands {
+        margin-top: 10px;
+        display: block;
+    }
+
+    .brand {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    
    
     .getInTouchContainer {
         height: 100%;
@@ -726,5 +866,9 @@ input::placeholder {
         height: 100%;
         text-align: center;
         margin-top: 10px;
+    }
+
+    .modal-block {
+        width: 95%;
     }
 }

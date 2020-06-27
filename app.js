@@ -1,6 +1,21 @@
-const productsCountEl = document.getElementById("products-count");
+// quarry
 
-const addToCartButtons = document.querySelectorAll(".add-to-cart1");
+$('.slider-block').slick({
+dots:true,
+autoplay:true,
+autoplaySpeed:2000,
+});
+
+$('#select-beast').selectize({
+    create:true,
+    sortField:'text'
+});
+
+
+//лайк и корзина
+
+let productsCountEl = document.getElementById("products-count");
+let addToCartButtons = document.querySelectorAll(".add-to-cart1");
 let pushHeart = document.querySelectorAll(".heart");
 
 for(let i = 0; i < addToCartButtons.length; i++) {
@@ -15,83 +30,12 @@ for(let i = 0; i < pushHeart.length; i++) {
 	});
 };
 
-$('.slider-block').slick({
-dots:true,
-autoplay:true,
-autoplaySpeed:2000,
-});
 
-$('#select-beast').selectize({
-    create:true,
-    sortField:'text'
-});
-
-// change quantity
+//инкремент декремент
 
 let incrementBtn = document.querySelectorAll('.increment-btn');
 let decrementBtn = document.querySelectorAll('.decrement-btn');
 let quantityInput = document.querySelectorAll('.product-quantity input');
-
-// ВАРИАНТ С УРОКА
-
-// incrementBtn.addEventListener("click",function() {
-//     let currenctValue = +quantityInput.value;
-//     let nextValue = currenctValue + 1;
-//     quantityInput.value = nextValue;
-//     if(nextValue <= 1) {
-//         decrementBtn.disabled = true;
-//     } else {
-//         decrementBtn.disabled = false;
-//     }
-// })
-
-// decrementBtn.addEventListener("click",function() {
-//     let currenctValue = +quantityInput.value;
-//     let nextValue = currenctValue - 1;
-//     quantityInput.value = nextValue;
-//     if(nextValue <= 1) {
-//         decrementBtn.disabled = true;
-//     } else {
-//         decrementBtn.disabled = false;
-//     }
-// })
-
-
-// ПЕРВЫЙ ВАРИАНТ
-
-// for(let i = 0; i < incrementBtn.length; i++) {
-// 	incrementBtn[i].addEventListener('click', function() {
-//     quantityInput[i].value = +quantityInput[i].value + 1;
-//     if(+quantityInput[i].value >= 5) {
-//         incrementBtn[i].disabled = true;
-//     } else {
-//         incrementBtn[i].disabled = false;
-//     };
-// 	if(+quantityInput[i].value <= 1) {
-//         decrementBtn[i].disabled = true;
-//     } else {
-//         decrementBtn[i].disabled = false;
-//     }
-// 	})
-// };
-
-// for(let i = 0; i < decrementBtn.length; i++) {
-// 	decrementBtn[i].addEventListener('click', function() {
-//     quantityInput[i].value = +quantityInput[i].value - 1;
-//     if(+quantityInput[i].value >= 5) {
-//         incrementBtn[i].disabled = true;
-//     } else {
-//         incrementBtn[i].disabled = false;
-//     };
-//     if(+quantityInput[i].value <= 1) {
-//         decrementBtn[i].disabled = true;
-//     } else {
-//         decrementBtn[i].disabled = false;
-//     }
-// 	})
-// };
-
-// ВТОРОЙ ВАРИАНТ
 
 for(let i = 0; i < incrementBtn.length; i++) {
     incrementBtn[i].addEventListener('click', function() {
@@ -121,3 +65,29 @@ for(let i = 0; i < incrementBtn.length; i++) {
     }
     })
 };
+
+//more details
+
+let moreDetails = document.querySelectorAll('.more-details');
+let modal = document.querySelector('.modal');
+let clothBtn = document.querySelector('.btn-cloth');
+
+moreDetails.forEach(function(btn){
+    btn.addEventListener('click', function() {
+    modal.classList.add('show');
+    modal.classList.remove('hide');	
+    })
+});
+
+let closeModal = () => {
+    modal.classList.add('hide');
+    modal.classList.remove('show');
+};
+
+clothBtn.addEventListener('click', closeModal);
+
+modal.addEventListener('click', function(e){
+    if(e.target === modal) {
+        closeModal();
+    }
+});

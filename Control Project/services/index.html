@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="../fontawesome-free-5.13.1-web/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
-    <title>BigProject</title>
+    <title>services</title>
 </head>
-<body>
+<body id='body'>
     <header> 
         <div class="overlay">
             <div class="container">
@@ -23,25 +23,25 @@
                     </div>
                     <div class="navBar toggle">
                         <ul class="list">
-                            <li class='selected subLi'>
+                            <li>
                                 <div class="animate">
-                                    <span id="home">HOME</span>
+                                   <a href="../home/index.html">HOME</a>
                                 </div>
-                                <ul class='submenu'>
-                                    <li><a href="#whoChoose">WHO CHOOSE US</a></li>
-                                    <li><a href="#portfolio">OUR PORTFOLIO</a></li>
-                                    <li><a href="#getInTouch">GET IN TOUCH</a></li>
-                                </ul>
                             </li>
                             <li>
                                 <div class="animate">
-                                    <a href="">ABOUT US</a>
+                                    <a href="../about/index.html">ABOUT US</a>
                                 </div>
                             </li>
-                            <li>  
+                            <li class='selected subLi'>  
                                 <div class="animate">
-                                    <a href="">SERVICES</a>
+                                    <span>SERVICES</span>
                                 </div>
+                                <ul class='submenu'>
+                                    <li><a href="#whatWeDo">WHAT WE DO</a></li>
+                                    <li><a href="#pricingPlans">PRICING PLANS</a></li>
+                                    <li><a href="#getInTouch">GET IN TOUCH</a></li>
+                                </ul>
                             </li>
                             <li class="subLi">
                                 <div class="animate">
@@ -66,180 +66,156 @@
                         </ul>
                     </div>
                     <div class="about">
-                        <div class="weAre"> WE ARE</div>
-                        <div class="agencyName">DIGITAL AGENCY</div>
+                        <div class="agencyName">OUR SERVICES</div>
                         <div class="agencyAbout">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aperiam ut dolor porro. Mollitia hic, nostrum, doloremque eum non libero voluptatem saepe quam asperiores ullam ducimus eaque consequatur culpa soluta!</p>
+                            <p>HOME / SERVICES</p>
                         </div>
-                    </div>
-                    <div class="picture"></div>
-                    <div class="history">
-                        <div class='square'>
-                            <div class="greenSquare"></div>
-                            <div class="hForSquare">
-                                <h1>HISTORY OF AGENCY</h1>
-                            </div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aperiam ut dolor porro. Mollitia hic, nostrum, doloremque eum non libero voluptatem saepe quam asperiores ullam ducimus eaque consequatur culpa soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aperiam ut dolor porro. Mollitia hic, nostrum, doloremque eum non libero voluptatem </p>
-                        <div class="button">READ MORE</div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-     <main>   
-        <div class="container">
-            <div class="titleContainer">
-                <div class="title">
-                    <div class='square'>
-                        <div class="greenSquare"></div>
-                        <div class="hForSquare">
-                            <h1 id='whoChoose'>WHO CHOOSE US</h1>
-                        </div>
+    <main>   
+        <div class="titleContainer">
+            <div class="title">
+                <div class='square'>
+                    <div class="greenSquare"></div>
+                    <div class="hForSquare">
+                        <h1 id='whatWeDo'>WHAT WE DO</h1>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aperiam ut dolor porro. Mollitia hic, nostrum, doloremque eum non libero voluptatem saepe.
-                    </p>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+        <div class="container"> 
+            <div class="whatWeDoContainer">
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="list1">
+                    <ul>
+                        <li><i class="fas fa-check-square"></i>Stunning on all screens</li>
+                        <li><i class="fas fa-check-square"></i>Easy to customize</li>
+                        <li><i class="fas fa-check-square"></i>Make a difference</li>
+                        <li><i class="fas fa-check-square"></i>Imagine and create</li>
+                        <li><i class="fas fa-check-square"></i>Unlimited possibilities</li>
+                    </ul>
+                </div>
+                <div class="list2">
+                    <ul>
+                        <li><i class="fas fa-check-square"></i>Remarkable style</li>
+                        <li><i class="fas fa-check-square"></i>Captivating presentations</li>
+                        <li><i class="fas fa-check-square"></i>Make a difference</li>
+                        <li><i class="fas fa-check-square"></i>Make a difference</li>
+                        <li><i class="fas fa-check-square"></i>Imagine and create</li>
+                    </ul>
+                </div>
+                <div class="macImage">
+                    <img src="image/Layer5.png" alt="">
                 </div>
             </div>
         </div>
-        
         <div class="container">
             <div class="servicesContainer">
                 <div class="service">
-                    <img src="image/111.png" alt="">
+                    <div class='square1'>
+                        <div class="greenSquare1"></div>
+                        <div class="hForSquare1">
+                            <img src="image/1.png" alt="">
+                        </div>
+                    </div>
+                    <h1>KEEP PULSE GOING</h1>     
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="service">
+                    <div class='square1'>
+                        <div class="greenSquare1"></div>
+                        <div class="hForSquare1">
+                            <img src="image/2.png" alt="">
+                        </div>
+                    </div>
                     <h1>UNLIMITED OPTIONS</h1>
-                    <h2>BRANDING</h2>
-                    <h2>DESIGN & COPYWRITING</h2>
-                    <h2>CONCEPT DEVELOPMENT</h2>
-                    <h2>USER EXPERIENCE</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                 </div>
                 <div class="service">
-                    <img src="image/222.png" alt="">
-                    <h1>DESIGN & DEVELOPMENT</h1>
-                    <h2>BRANDING</h2>
-                    <h2>DESIGN & COPYWRITING</h2>
-                    <h2>CONCEPT DEVELOPMENT</h2>
-                    <h2>USER EXPERIENCE</h2>
+                    <div class='square1'>
+                        <div class="greenSquare1"></div>
+                        <div class="hForSquare1">
+                            <img src="image/3.png" alt="">
+                        </div>
+                    </div>
+                    <h1>GREAT IDEAS</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                 </div>
                 <div class="service">
-                    <img src="image/333.png" alt="">
-                    <h1>E-COMMERCE</h1>
-                    <h2>BRANDING</h2>
-                    <h2>DESIGN & COPYWRITING</h2>
-                    <h2>CONCEPT DEVELOPMENT</h2>
-                    <h2>USER EXPERIENCE</h2>
+                    <div class='square1'>
+                        <div class="greenSquare1"></div>
+                        <div class="hForSquare1">
+                            <img src="image/4.png" alt="">
+                        </div>
+                    </div>
+                    <h1>AWESOME SUPPORT</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                 </div>
-                <div class="service">
-                    <img src="image/444.png" alt="">
-                    <h1>CUSTOMIZABLE DESIGN</h1>
-                    <h2>BRANDING</h2>
-                    <h2>DESIGN & COPYWRITING</h2>
-                    <h2>CONCEPT DEVELOPMENT</h2>
-                    <h2>USER EXPERIENCE</h2>
-                </div>
-                <div class="image"></div>
             </div>
-        </div>
-
+        </div>    
         <div class="container">
             <div class="titleContainer">
                 <div class="title">
                     <div class='square'>
                         <div class="greenSquare"></div>
                         <div class="hForSquare">
-                            <h1 id='portfolio'>OUR PORTFOLIO</h1>
+                            <h1 id='pricingPlans'>PRICING PLANS</h1>
                         </div>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aperiam ut dolor porro. Mollitia hic, nostrum, doloremque eum non libero voluptatem saepe.
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                 </div>
             </div>
-        </div>
-
+        </div> 
         <div class="container">
-            <div class="portfolioContainer">
-                <div class="chooseContainer">
-                    <h1>CHOOSE CATEGORY</h1>
-                    <ul class="chooseMenu">
-                        <li>ALL</li>
-                        <li>PHOTOGRAPHY</li>
-                        <li>WEBDESIGN</li>
-                        <li>LOGO</li>
-                        <li>GRAPHICS</li>
-                        <li>ADVERTISING</li>
-                        <li>FASHION</li>
+            <div class="pricingContainer">
+                <div class="plan">
+                    <h1>BASIC</h1>
+                    <div class="price">$35.99 MONTHLY</div>
+                    <ul>
+                        <li><i class="fas fa-check-square"></i>Lorem ipsum dolor sit amet</li>
+                        <li><i class="fas fa-check-square"></i>Consectetuer adipiscing elit</li>
+                        <li><i class="fas fa-check-square"></i>Sed diam nonummy</li>
+                        <li><i class="fas fa-check-square"></i>Nibh euismod tincidunt</li>
+                        <li><i class="fas fa-check-square"></i>Ut laoreet dolore</li>
+                        <li><i class="fas fa-check-square"></i>Magna aliquam erat volutpat</li>
                     </ul>
+                    <div class="button">GET STARTED</div>
                 </div>
-                <div class="photos">
-                    <div class="photo">
-                        <div class="overlay">
-                            <h1 class="employer">BAT MAN</h1>
-                            <div class='job'>photography</div>
-                        </div>
-                        <img src="image/Layer5.png" alt="">
-                    </div>
-                    <div class="photo">
-                        <div class="overlay">
-                            <h1 class="employer">BAT MAN</h1>
-                            <div class='job'>photography</div>
-                        </div>
-                        <img src="image/Layer8.png" alt="">
-                    </div>
-                    <div class="photo">
-                        <div class="overlay">
-                            <h1 class="employer">BAT MAN</h1>
-                            <div class='job'>photography</div>
-                        </div>
-                        <img src="image/Layer11.png" alt="">
-                    </div>
+                <div class="plan">
+                    <h1>ADVANCED</h1>
+                    <div class="price">$55.99 MONTHLY</div>
+                    <ul>
+                        <li><i class="fas fa-check-square"></i>Lorem ipsum dolor sit amet</li>
+                        <li><i class="fas fa-check-square"></i>Consectetuer adipiscing elit</li>
+                        <li><i class="fas fa-check-square"></i>Sed diam nonummy</li>
+                        <li><i class="fas fa-check-square"></i>Nibh euismod tincidunt</li>
+                        <li><i class="fas fa-check-square"></i>Ut laoreet dolore</li>
+                        <li><i class="fas fa-check-square"></i>Magna aliquam erat volutpat</li>
+                    </ul>
+                    <div class="button">GET STARTED</div>
                 </div>
-                <div class="photos2">
-                    <div class="photo">
-                        <div class="overlay">
-                            <h1 class="employer">BAT MAN</h1>
-                            <div class='job'>photography</div>
-                        </div>
-                        <img src="image/Layer6.png" alt="">
-                    </div>
-                    <div class="photo">
-                        <div class="overlay">
-                            <h1 class="employer">BAT MAN</h1>
-                            <div class='job'>photography</div>
-                        </div>
-                        <img src="image/Layer9.png" alt="">
-                    </div>
-                    <div class="photo">
-                        <div class="overlay">
-                            <h1 class="employer">BAT MAN</h1>
-                            <div class='job'>photography</div>
-                        </div>
-                        <img src="image/Layer14.png" alt="">
-                    </div>
+                <div class="plan">
+                    <h1>SMART</h1>
+                    <div class="price">$75.99 MONTHLY</div>
+                    <ul>
+                        <li><i class="fas fa-check-square"></i>Lorem ipsum dolor sit amet</li>
+                        <li><i class="fas fa-check-square"></i>Consectetuer adipiscing elit</li>
+                        <li><i class="fas fa-check-square"></i>Sed diam nonummy</li>
+                        <li><i class="fas fa-check-square"></i>Nibh euismod tincidunt</li>
+                        <li><i class="fas fa-check-square"></i>Ut laoreet dolore</li>
+                        <li><i class="fas fa-check-square"></i>Magna aliquam erat volutpat</li>
+                    </ul>
+                    <div class="button">GET STARTED</div>
                 </div>
-                <div class="photos3">
-                    <div class="photo">
-                        <div class="overlay">
-                            <h1 class="employer">BAT MAN</h1>
-                            <div class='job'>photography</div>
-                        </div>
-                        <img src="image/Layer7.png" alt="">
-                    </div>
-                    <div class="photo">
-                        <div class="overlay">
-                            <h1 class="employer">BAT MAN</h1>
-                            <div class='job'>photography</div>
-                        </div>
-                        <img src="image/Layer10.png" alt="">
-                    </div>
-                    <div class="photo">
-                        <div class="overlay">
-                            <h1 class="employer">BAT MAN</h1>
-                            <div class='job'>photography</div>
-                        </div>
-                        <img src="image/Layer13.png" alt="">
-                    </div>
-                </div>
-            </div>    
+            </div>
         </div>
     </main>
     <footer>
@@ -248,14 +224,14 @@
                 <div class="getInTouchContainer">
                     <div class="getInTouch">
                         <h1 id='getInTouch'>YOU THINK WE'RE COOL ? LET'S WORK TOGETHER</h1>
-                        <div class="button">GET IN TOUCH</div>
+                        <div class="button" id='getInTouchBut'>GET IN TOUCH</div>
                     </div>
                     <div class="stayInformed">
                         <h1>STAY INFORMED WITH OUR NEWSLETTER</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <div class="form">
                             <form action="">
-                                <input type="email" placeholder="YOUR EMAIL">
+                                <input type="email" placeholder="YOUR EMAIL" class='email'>
                             </form>
                         </div>
                         <div class="button">SEND</div>
@@ -267,39 +243,44 @@
             <div class="footerContainer">
                 <div class="navBar">
                     <ul class="list">
-                        <li class='selected '>
-                            <div class="animate">
-                                <a href="#home">HOME</a>
-                            </div>
-                            </li>
                         <li>
                             <div class="animate">
-                                <a href="">ABOUT US</a>
+                                <a href="../home/index.html">HOME</a>
                             </div>
                         </li>
-                        <li>  
+                        <li>
                             <div class="animate">
-                                <a href="">SERVICES</a>
+                                <a href="../about/index.html"> ABOUT US</a>
                             </div>
+                        </li>
+                        <li class='selected subLi'>  
+                            <div class="animate">
+                                <span>SERVICES</span>
+                            </div>
+                            <ul class='submenu'>
+                                <li><a href="#whatWeDo">WHAT WE DO</a></li>
+                                <li><a href="#pricingPlans">PRICING PLANS</a></li>
+                                <li><a href="#getInTouch">GET IN TOUCH</a></li>
+                            </ul>
                         </li>
                         <li class="subLi">
                             <div class="animate">
-                                <a href="">PORTFOLIO</a>
+                                <a href="#home">PORTFOLIO</a>
                             </div>
                             <ul class='submenu'>
                                 <li>PORTFOLIO LIST</li>
-                                <li><a href="">SINGLE PROJECT 1</a></li>
-                                <li><a href="">SINGLE PROJECT 2</a></li>
+                                <li><a href="../../Startup project/index.html">SINGLE PROJECT 1</a></li>
+                                <li><a href="../../Blog project/index.html">SINGLE PROJECT 2</a></li>
                             </ul>
                         </li>
                         <li>
                             <div class="animate">
-                                <a href="">BLOG</a>
+                                <a href="#home">BLOG</a>
                             </div>
                         </li>
                         <li>
                             <div class="animate">
-                                <a href="">CONTACT US</a>
+                                <a href="#home">CONTACT US</a>
                             </div>
                         </li>
                     </ul>
@@ -308,16 +289,49 @@
                     <h1>CREATED BY AKHOUAD ©2016. ALL RIGHTS RESERVED.</h1>   
                 </div>
                 <div class="icons">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-youtube"></i>
-                        <i class="fab fa-linkedin-in"></i>
-                        <i class="fab fa-pinterest-p"></i>
-                        <i class="fab fa-instagram"></i>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
     </footer>  
+
+    <div class="modal">
+		<div class="modal-block">
+			<form action="">
+				<div class="btn-cloth"><i class="far fa-window-close"></i></div>
+				<h3>Leave contacts to stay in touch</h3>
+				<div class="form-field">
+					<input type="text" placeholder="your name">
+				</div>
+				<div class="form-field">
+					<input type="text" placeholder="your phone">
+				</div>
+				<div class="button">GET IN TOUCH</div>
+			</form>
+		</div>
+    </div>
+    
+    <div class="modal2">
+		<div class="modal-block">
+			<form action="">
+				<div class="btn-cloth2"><i class="far fa-window-close"></i></div>
+				<h3>Do you wont to join us?</h3>
+				<div class="form-field">
+					<input type="text" placeholder="your name">
+				</div>
+				<div class="form-field">
+					<input type="text" placeholder="your phone">
+				</div>
+				<div class="button">JOIN</div>
+			</form>
+		</div>
+    </div>
+
     <script src="sript.js"></script> 
 </body>
 </html>
