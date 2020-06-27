@@ -11,7 +11,7 @@ burger.addEventListener('click', burgerFunction);
 
 let width = document.querySelector("#body").offsetWidth;
 
-if (width > 380) {
+if (width > 575) {
 $(document).ready(function(){
     $('.teamContainer').slick({
         lazyLoad: 'ondemand',
