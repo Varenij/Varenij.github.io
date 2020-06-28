@@ -586,10 +586,286 @@ input::placeholder {
 	display: block;
 }
 
+@media all and (max-width: 768px) {
+    body {
+        animation: bounceInLeft;;
+        animation-duration: 2s;
+    }
+
+    .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+    header {
+        height: 100%;
+    }
+    .headerContainer {
+        padding-top: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25px auto 3fr 3fr 3fr;
+        grid-template-areas: 
+        'log'
+        'nav'
+        'abo'
+        'pic'
+        'his'
+        ;
+        justify-items: center;
+    }
+
+    ul.list {
+        height: 100%;
+        animation: fadeInDown;
+        animation-duration: 1s;
+    }
+
+    .weAre {
+        margin-top: 10px;
+    }
+
+    .agencyName {
+        width: 100%;
+        height: 50%;
+    }
+
+    .about {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .agencyAbout {
+        width: 100%;
+    }
+
+    .overlay {
+        position: relative;
+    }
+    
+    .titleContainer {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        padding-top: 20px;
+    }
+
+    .picture {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+    }
+
+    .square {
+        height: 30px;
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .history {
+        margin-top: 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .history .button {
+        position: relative;
+        bottom: 0;
+        margin: 0 auto;
+    }
+
+    .hForSquare {
+       width: 100%;
+       text-align: center;
+    }
+
+    .greenSquare {
+        left: 40%;
+    }
+
+    .history p {
+        text-align: center;
+    }
+
+    .servicesContainer{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 3.5fr;
+        grid-gap: 20px;
+        grid-template-areas: 
+        "se se"
+        "se se"
+        "pi pi"
+    ;
+    }
+
+    .service {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .image {
+        height: 100%;
+        width: 100%;
+        background-size: 100%;
+    }
+    .portfolioContainer {
+        height: 100%;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .photo1 {
+        grid-area: p1;
+        justify-self: end;
+    }
+
+    .photo2 {
+        grid-area: p2;
+        justify-self: end;
+    }
+
+    .photo3 {
+        grid-area: p3;
+        justify-self: start;
+    }
+
+    .photo4 {
+        grid-area: p4;
+        justify-self: end;
+    }
+
+    .photo5 {
+        grid-area: p5;
+        justify-self: start;
+    }
+
+    .photo6 {
+        grid-area: p6;
+        justify-self: end;
+    }
+
+    .photo7 {
+        grid-area: p7;
+        justify-self: end;
+    }
+
+    .photo8 {
+        grid-area: p8;
+        justify-self: start;
+    }
+
+    .photo9 {
+        grid-area: p9;
+        justify-self: start;
+    }
+
+    .photos {
+        height: 100%;
+        display: grid;
+        margin-bottom: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-gap:20px;
+        grid-template-areas: 
+        'p1 p3'
+        'p2 p3'
+        ;
+    }
+
+    .photos2 {
+        height: 100%;
+        display: grid;
+        margin-bottom: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-gap:20px;
+        grid-template-areas: 
+        'p4 p5'
+        'p6 p5'
+        ;
+    }
+
+    .photos3 {
+        height: 100%;
+        display: grid;
+        margin-bottom: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-gap:20px;
+        grid-template-areas: 
+        'p7 p8'
+        'p7 p9'
+        ;
+    }
+
+    .photo {
+        margin: 0;
+    }
+
+    .employer {
+        margin-top: 0;
+    }
+   
+    .getInTouchContainer {
+        height: 100%;
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
+
+    .getInTouch .button {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .stayInformed .button {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .footerContainer {
+        height: 100%;
+        display: block;
+        padding: 0;
+    }
+
+    .footerContainer .navBar {
+        height: 100%; 
+    }
+
+    .list li {
+        margin: 0 auto;
+    }
+
+    .copyRight {
+        height: 100%;
+        text-align: center;
+    }
+
+    .icons {
+        height: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .modal-block {
+        width: 95%;
+    }
+}
 
 @media all and (max-width: 575px) {
     body {
-        animation: zoomIn;
+        animation: bounceInLeft;;
         animation-duration: 2s;
     }
 
@@ -737,6 +1013,24 @@ input::placeholder {
         text-align: center;
     }
 
+    .photos {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .photos2 {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .photos3 {
+        display: block;
+    }
+
+    .photo {
+        margin-bottom: 10px;
+    }
+
     .employer {
         margin-top: 0;
     }
@@ -787,3 +1081,4 @@ input::placeholder {
         width: 95%;
     }
 }
+

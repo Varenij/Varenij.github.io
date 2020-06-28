@@ -558,10 +558,234 @@ ul.submenu {
 	display: block;
 }
 
-
-@media all and (max-width: 575px) {
+@media all and (max-width: 768px) {
     body {
-        animation: zoomIn;
+        animation: bounceInLeft;;
+        animation-duration: 2s;
+    }
+
+    .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+    header {
+        height: 100%;
+    }
+    .headerContainer {
+        padding-top: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25px auto auto 3fr;
+        grid-template-areas: 
+        'log'
+        'bur'
+        'nav'
+        'abo'
+        ;
+        justify-items: center;
+    }
+
+    .agencyName {
+        width: 100%;
+        height: 50%;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .agencyAbout {
+        width: 100%;
+    }
+
+    .overlay {
+        position: relative;
+    }
+    
+    .titleContainer {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        padding-top: 20px;
+    }
+
+    .title {
+        margin-top: 0;
+    }
+
+    .navBar {
+        margin-bottom: 20px;
+    }
+
+    .whatWeDoContainer {
+        padding: 10px 0 10px 0;
+        height: 100%;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1.5fr 4fr;
+        grid-template-areas: 
+        'p p'
+        'l1 l2'
+        'i i'
+        ;
+    }
+
+    .text {
+        grid-area: p;
+    }
+
+    .list1 {
+        grid-area: l1;
+    }
+
+    .list2 {
+        grid-area: l2;
+    }
+
+    .macImage {
+        grid-area: i;
+    }
+
+    .macImage img {
+        width: 740px;
+        height: 480px;
+    }
+
+    .whatWeDoContainer ul {
+        text-align: left;
+        margin: 10px 0 10px 100px;
+    }
+
+    .square {
+        height: 30px;
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .history {
+        margin-top: 20px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .history .button {
+        position: relative;
+        bottom: 0;
+        margin: 0 auto;
+    }
+
+    .hForSquare {
+       width: 100%;
+       text-align: center;
+    }
+
+    .greenSquare {
+        left: 40%;
+    }
+
+    .history p {
+        text-align: center;
+    }
+
+    .servicesContainer{
+        height: 100%;
+        padding-bottom: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+        grid-template-areas: 
+        "se se"
+        "se se"
+    ;
+    }
+
+    .service {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .service h1 {
+        margin: 0;
+    }
+
+    .pricingContainer {
+        height: 100%;
+        margin: 0 auto;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .plan {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 0 10px 10px;
+    }
+
+    .plan:hover {
+        transform: scale(1.02);
+    }
+   
+    .getInTouchContainer {
+        height: 100%;
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
+
+    .getInTouch .button {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .stayInformed .button {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .footerContainer {
+        height: 100%;
+        display: block;
+        padding: 0;
+    }
+
+    .footerContainer .navBar {
+        height: 100%; 
+    }
+
+    .list li {
+        margin: 0 auto;
+    }
+
+    .copyRight {
+        height: 100%;
+        text-align: center;
+    }
+
+    .icons {
+        height: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .modal-block {
+        width: 95%;
+    }
+}
+
+@media all and (max-width: 565px) {
+    body {
+        animation: bounceInLeft;;
         animation-duration: 2s;
     }
 
@@ -647,6 +871,7 @@ ul.submenu {
 
     .macImage img {
         width: 350px;
+        height: 230px;
     }
 
     .square {
@@ -768,3 +993,4 @@ ul.submenu {
         width: 95%;
     }
 }
+
