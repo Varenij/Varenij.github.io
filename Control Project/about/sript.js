@@ -77,3 +77,4 @@ modal2.addEventListener('click', function(e){
         closeModal2();
     }
 });
+

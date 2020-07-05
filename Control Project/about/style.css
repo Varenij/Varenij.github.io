@@ -638,6 +638,10 @@ ul.submenu {
 	display: block;
 }
 
+.flexslider {
+   
+}
+
 @media all and (max-width: 868px) {
     body {
         animation: bounceInLeft;

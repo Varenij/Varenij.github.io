@@ -72,17 +72,19 @@ let moreDetails = document.querySelectorAll('.more-details');
 let modal = document.querySelector('.modal');
 let clothBtn = document.querySelector('.btn-cloth');
 
-moreDetails.forEach(function(btn){
-    btn.addEventListener('click', function() {
+let openModal = () => {
     modal.classList.add('show');
-    modal.classList.remove('hide');	
-    })
-});
+    modal.classList.remove('hide');
+};
 
 let closeModal = () => {
     modal.classList.add('hide');
     modal.classList.remove('show');
 };
+
+moreDetails.forEach(function(btn){
+    btn.addEventListener('click', openModal)
+});
 
 clothBtn.addEventListener('click', closeModal);
 
@@ -91,3 +93,12 @@ modal.addEventListener('click', function(e){
         closeModal();
     }
 });
+
+function openModalOnScroll () {
+    if (window.pageYOffset >= document.documentElement.scrollHeight/2) {
+        openModal();
+        window.removeEventListener('scroll', openModalOnScroll);
+    }
+};
+
+window.addEventListener('scroll', openModalOnScroll);

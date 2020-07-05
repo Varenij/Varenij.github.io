@@ -49,3 +49,11 @@ modal2.addEventListener('click', function(e){
         closeModal2();
     }
 });
+
+$(window).load(function() {
+    $('.flexslider').flexslider({
+        slideshow: true,               
+        slideshowSpeed: 3000,          
+        animationSpeed: 600,  
+});
+  });
