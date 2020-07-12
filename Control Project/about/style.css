@@ -642,7 +642,7 @@ ul.submenu {
    
 }
 
-@media all and (max-width: 868px) {
+@media all and (max-width: 1024px) {
     body {
         animation: bounceInLeft;
         animation-duration: 2s;

@@ -7,8 +7,33 @@ let burgerFunction = () => {
 burger.addEventListener('click', burgerFunction);
 
 //слайдеры для разных устройств
-let width = document.querySelector("#body").offsetWidth;
-if (width > 575) {
+// let width = document.querySelector("#body").offsetWidth;
+// if (width > 575) {
+//     $(document).ready(function(){
+//         $('.teamContainer').slick({
+//             lazyLoad: 'ondemand',
+//             slidesToShow: 3,
+//             slidesToScroll: 1,
+//             autoplay:true,
+//             autoplaySpeed:2000,
+//             infinite: true,
+//             dots: true,
+//         });
+//     });
+// } else {
+//     $(document).ready(function(){
+//         $('.teamContainer').slick({
+//             dots: true,
+//             infinite: true,
+//             autoplay:true,
+//             autoplaySpeed:2000,
+//             fade: true,
+//             cssEase: 'linear'
+//       });
+//     });
+// };
+
+
     $(document).ready(function(){
         $('.teamContainer').slick({
             lazyLoad: 'ondemand',
@@ -18,20 +43,62 @@ if (width > 575) {
             autoplaySpeed:2000,
             infinite: true,
             dots: true,
+            responsive: [
+                {
+                  breakpoint: 565,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                  }
+                },
+                {
+                    breakpoint: 868,
+                    settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 1,
+                      infinite: true,
+                      dots: true
+                    }
+                  }
+              ]
         });
     });
-} else {
-    $(document).ready(function(){
-        $('.teamContainer').slick({
-            dots: true,
-            infinite: true,
-            autoplay:true,
-            autoplaySpeed:2000,
-            fade: true,
-            cssEase: 'linear'
-      });
-    });
-};
+
+
+$('.responsive').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
 
 //модальные окна
 let getInTouch = document.querySelector('#getInTouchBut');
