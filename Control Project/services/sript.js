@@ -1,10 +1,23 @@
 //бургер меню
-let menu = document.querySelector(".navBar");
-let burger = document.querySelector(".burger");
-let burgerFunction = () => {
-        menu.classList.toggle('toggle')
-};
-burger.addEventListener('click', burgerFunction);
+// let menu = document.querySelector(".navBar");
+// let burger = document.querySelector(".burger");
+// let burgerFunction = () => {
+//         menu.classList.toggle('toggle')
+// };
+// burger.addEventListener('click', burgerFunction);
+
+ let mobileMenu = document.querySelector('.nav-mobile-menu');
+ let mainMenu = document.querySelector('.navigation');
+
+ mobileMenu.addEventListener('click', function(){
+     mobileMenu.classList.toggle('active-menu');
+     if (mobileMenu.classList.contains('active-menu')) {
+         mainMenu.classList.add('active-menu');
+     } else mainMenu.classList.remove('active-menu')
+ }); 
+
+
+
 
 //модальные окна
 let getInTouch = document.querySelector('#getInTouchBut');
@@ -50,6 +63,8 @@ modal2.addEventListener('click', function(e){
     }
 });
 
+
+//flex slider
 $(window).load(function() {
     $('.flexslider').flexslider({
         slideshow: true,               

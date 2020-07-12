@@ -588,6 +588,10 @@ ul.submenu {
     text-align: right;
 }
 
+.nav-mobile-menu {
+    display: none;
+}
+
 @media all and (max-width: 868px) {
     body {
         animation: bounceInLeft;;
@@ -819,6 +823,19 @@ ul.submenu {
         animation-duration: 2s;
     }
 
+    .navBar ul {
+        display: block;
+        height: 100%;
+    }
+
+    .submenu li{
+        display: none;
+    }
+
+    .subLi:hover .submenu li{
+        display: block;
+    }
+
     .container {
     width: 100%;
     margin: 0 auto;
@@ -829,32 +846,95 @@ ul.submenu {
     }
     .headerContainer {
         padding-top: 10px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 25px auto auto 3fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 25px 3fr;
         grid-template-areas: 
-        'log'
-        'bur'
-        'nav'
-        'abo'
+        'log nav'
+        'abo abo'
         ;
         justify-items: center;
     }
 
-    .burger {
-        display: block;
-        grid-area: bur;
+    .logo {
+        justify-self: start;
     }
 
-    ul.list {
-        height: 100%;
-        display: block;
-        animation: fadeInDown;
-        animation-duration: 1s;
+    .navBar {
+        justify-self: end;
     }
 
-    .toggle {
-        display: none;
-    } 
+    .nav-mobile-menu {
+        display: block;
+        width: 15px;
+        height: 15px;
+        position: relative;
+    }
+
+    .nav-mobile-menu span {
+        height: 1px;
+        background-color: #60606e;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transition: .25s ease-in-out ;
+    }
+
+    .nav-mobile-menu span:nth-child(1) {
+        top: 3px;
+    }
+
+    .nav-mobile-menu span:nth-child(2) {
+        top: 7px;
+    }
+
+    .nav-mobile-menu span:nth-child(3) {
+        bottom: 3px;
+    }
+
+    .nav-mobile-menu.active-menu span:nth-child(1) {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+
+    .nav-mobile-menu.active-menu span:nth-child(2) {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+
+    .nav-mobile-menu.active-menu span:nth-child(3) {
+        transform: scale(0);
+    }
+
+    .nav-mobile-menu.active-menu .navBar ul {
+      
+    }
+
+    .navigation {
+        position: fixed;
+        z-index: 15;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 180px;
+        max-width: 180px;
+        transition: all 500ms ease-in-out;
+        transform: translateX(150%);
+        background-color: #d8d9d9;
+        border-radius: 5px;
+    }
+
+    .navigation.active-menu {
+        opacity: 1;
+        visibility: visible;
+        top: 115px;
+        transform: translateX(0);
+
+    }
+
+    .hidden-menu {
+        opacity: 0;
+        visibility: hidden;
+    }
 
     .agencyName {
         width: 100%;
