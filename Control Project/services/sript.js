@@ -1,11 +1,3 @@
-//бургер меню
-// let menu = document.querySelector(".navBar");
-// let burger = document.querySelector(".burger");
-// let burgerFunction = () => {
-//         menu.classList.toggle('toggle')
-// };
-// burger.addEventListener('click', burgerFunction);
-
  let mobileMenu = document.querySelector('.nav-mobile-menu');
  let mainMenu = document.querySelector('.navigation');
 
@@ -15,9 +7,6 @@
          mainMenu.classList.add('active-menu');
      } else mainMenu.classList.remove('active-menu')
  }); 
-
-
-
 
 //модальные окна
 let getInTouch = document.querySelector('#getInTouchBut');
@@ -62,7 +51,6 @@ modal2.addEventListener('click', function(e){
         closeModal2();
     }
 });
-
 
 //flex slider
 $(window).load(function() {
