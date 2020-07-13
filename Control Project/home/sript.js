@@ -1,10 +1,15 @@
 //бургер меню
 let menu = document.querySelector(".navBar");
 let burger = document.querySelector(".burger");
+let cross = document.querySelector(".cross");
 let burgerFunction = () => {
-        menu.classList.toggle('toggle')
+        menu.classList.toggle('toggle');
+        burger.classList.toggle('toggle');
+        cross.classList.toggle('toggle2');
 };
+
 burger.addEventListener('click', burgerFunction);
+cross.addEventListener('click', burgerFunction);
 
 //модальные окна
 let getInTouch = document.querySelector('#getInTouchBut');

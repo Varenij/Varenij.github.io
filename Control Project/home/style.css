@@ -37,6 +37,10 @@ header {
     display: none;
 }
 
+.cross {
+    display: none;
+}
+
 .container {
 	width: 1140px;
     margin: 0 auto;
@@ -897,16 +901,25 @@ input::placeholder {
         grid-area: bur;
     }
 
+    .cross {
+        grid-area: bur;
+        margin-bottom: 10px;
+    }
+
+    .toggle {
+        display: none;
+    } 
+
+    .toggle2 {
+        display: block;
+    }
+
     ul.list {
         height: 100%;
         display: block;
         animation: fadeInDown;
         animation-duration: 1s;
     }
-
-    .toggle {
-        display: none;
-    } 
 
     .weAre {
         margin-top: 10px;
