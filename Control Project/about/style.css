@@ -883,7 +883,7 @@ ul.submenu {
     }
 }
 
-@media all and (max-width: 565px) {
+@media all and (max-width: 575px) {
     body {
         animation: bounceInLeft;
         animation-duration: 2s;
@@ -1049,6 +1049,20 @@ ul.submenu {
 
     .photo {
         margin-left: 0;
+       
+    }
+
+    .photo img {
+        margin-left: 0;
+    }
+
+    .slick-prev:before {
+        font-size: 30px;
+        margin-left: 10px;
+    }
+
+    .slick-next:before {
+        font-size: 30px;
     }
 
     .readMoreContainer {
