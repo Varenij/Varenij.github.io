@@ -60,3 +60,16 @@ $(window).load(function() {
         animationSpeed: 600,  
 });
   });
+
+//Tabs
+let tabButton = document.querySelectorAll('.tabButton');
+let tab = document.querySelectorAll('.tab');
+
+for (let i=0; i<=tabButton.length; i++) {
+    tabButton[i].addEventListener('click', function () {
+        tab.forEach(c => c.classList.remove('showTab'))
+        tab[i].classList.add('showTab');
+        tabButton.forEach(a => a.classList.remove('borderBottom'))
+        tabButton[i].classList.add('borderBottom');
+    })
+}

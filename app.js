@@ -1,4 +1,4 @@
-// quarry
+// slider
 
 $('.slider-block').slick({
 dots:true,
@@ -31,7 +31,7 @@ for(let i = 0; i < pushHeart.length; i++) {
 };
 
 
-//инкремент декремент
+//инкремент/декремент
 
 let incrementBtn = document.querySelectorAll('.increment-btn');
 let decrementBtn = document.querySelectorAll('.decrement-btn');
