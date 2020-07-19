@@ -618,6 +618,10 @@ ul.submenu {
     text-align: center;
 }
 
+.tabButton:hover{
+    cursor: pointer;
+}
+
 .tab img {
     height: 100%;
 }
