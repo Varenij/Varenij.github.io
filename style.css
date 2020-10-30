@@ -126,14 +126,15 @@ li span {
 .search {
 	width: 80%;
 	height: 50px;
-	padding-top: 5px;
+	
 }
 
 .searchform {
 	padding-top: 5px;
-	width: 200px;
+	width: 210px;
 	border: 1px solid #2c71b8;
 	margin: 0 auto;
+	margin-bottom: 5px;
 }
 
 .inputform {
@@ -142,8 +143,8 @@ li span {
 }
 
 .iconplace {
-	width: 48px;
-	height: 40px;
+	width: 45px;
+	height: 43px;
 	float: left;
 }
 

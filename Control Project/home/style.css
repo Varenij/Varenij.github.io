@@ -912,6 +912,7 @@ input::placeholder {
 
     .toggle2 {
         display: block;
+        transition: all 0.5s;
     }
 
     ul.list {
